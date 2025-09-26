@@ -1,12 +1,23 @@
+import {Route, Routes} from 'react-router'
 import './App.css'
+import { HomePage } from './Pages/HomePage'
+import { AnotherPage } from './Pages/AnotherPage'
+
 
 function App() {
 
   return (
     <>
-      <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+      <Routes>
+        <Route
+            index
+            element={<HomePage />}
+        />
+          <Route
+              path="another"
+              element={<AnotherPage />}
+          />
+      </Routes>
     </>
   )
 }
