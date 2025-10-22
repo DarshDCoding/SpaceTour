@@ -7,7 +7,6 @@ export function TechnologyPage (){
     sm:bg-[url('/assets/technology/background-technology-tablet.jpg')]
     lg:bg-[url('/assets/technology/background-technology-desktop.jpg')]`}>
             <NavigationBar/>
-            <h1>This is Technology Page</h1>
         </div>
     )
 }

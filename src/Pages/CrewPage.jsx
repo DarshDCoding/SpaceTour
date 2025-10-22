@@ -6,7 +6,6 @@ export function CrewPage (){
         sm:bg-[url('/assets/crew/background-crew-tablet.jpg')]
         lg:bg-[url('/assets/crew/background-crew-desktop.jpg')]`}>
                 <NavigationBar/>
-                <h1>This is Crew Page</h1>
         </div>
     )
 }

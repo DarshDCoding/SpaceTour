@@ -10,7 +10,7 @@ export function NavigationBar() {
 
     return (
         <div className={`border border-transparent`}>
-            <nav className="mt-2 md:mt-8 pl-8 md:pl-16 flex justify-between h-[80px]">
+            <nav className="mt-[-1px] md:mt-8 pl-8 md:pl-16 flex justify-between h-[80px]">
 
                 <div className="relative left-nav-bar flex items-center gap-[3rem]">
                     <img src={logoUrl} alt="Logo" className=''/>
@@ -19,21 +19,23 @@ export function NavigationBar() {
                     </div>
                 </div>
 
+
                 <div
-                    className="right-nav-bar hidden md:flex md:w-[90%] lg:w-[70%] xl:w-[50%] h-full px-10  justify-end items-center gap-[2rem] bg-gray-500/15 backdrop-blur-md ">
+                    className="right-nav-bar flex flex-col h-[100vh] w-[80%] md:h-[80px] md:flex md:flex-row md:w-[90%] lg:w-[70%] xl:w-[50%] px-10 md:justify-end md:items-center gap-[2rem] bg-gray-500/15 backdrop-blur-md ">
+                    <div className="flex md:hidden lg:hidden xl:hidden items-center px-8 ">
+                        <button onClick={clickedFunc}>
+                            {hamClicked ? (
+                                <img src={"/assets/shared/icon-hamburger.svg"} alt="hamburger_menu" className='h-6'/>
+                            ) : (
+                                <img src={"/assets/shared/icon-close.svg"} alt="hamburger_menu" className='h-6'/>
+                            )}
+                        </button>
+                    </div>
+
                     <Navlink to={"/"} title={"00 HOME"}/>
                     <Navlink to={"/destination"} title={"01 DESTINATION"}/>
                     <Navlink to={"/crew"} title={"02 CREW"}/>
                     <Navlink to={"/technology"} title={"03 TECHNOLOGY"}/>
-                </div>
-                <div className="flex md:hidden lg:hidden xl:hidden items-center px-8 ">
-                    <button onClick={clickedFunc}>
-                        {hamClicked ? (
-                            <img src={"/assets/shared/icon-hamburger.svg"} alt="hamburger_menu" className='h-6'/>
-                        ) : (
-                            <img src={"/assets/shared/icon-close.svg"} alt="hamburger_menu" className='h-6'/>
-                        )}
-                    </button>
                 </div>
             </nav>
         </div>
