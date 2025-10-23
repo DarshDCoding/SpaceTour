@@ -38,10 +38,10 @@ export function NavigationBar() {
                 </div>
                 <div
                     className={`right-nav-bar fixed right-0 transform transition-transform duration-150 ease-in-out z-10 flex ${hamClicked? "translate-x-0" : "translate-x-full"} md:transition-none flex-col h-[100vh] w-[75vw] md:h-[80px] md:flex md:flex-row md:w-[90%] lg:w-[70%] xl:w-[50%] pt-20 md:pt-0 pl-6 pr-4 md:px-10 md:justify-end md:items-center gap-5 md:gap-[2rem] bg-gray-500/15 backdrop-blur-md`}>
-                    <Navlink to={"/"} title={"00 HOME"}/>
-                    <Navlink to={"/destination"} title={"01 DESTINATION"}/>
-                    <Navlink to={"/crew"} title={"02 CREW"}/>
-                    <Navlink to={"/technology"} title={"03 TECHNOLOGY"}/>
+                    <Navlink to={"/"} index={"00"} title={"HOME"}/>
+                    <Navlink to={"/destination"} index={"01"} title={"DESTINATION"}/>
+                    <Navlink to={"/crew"} index={"02"} title={"CREW"}/>
+                    <Navlink to={"/technology"} index={"03"} title={"TECHNOLOGY"}/>
                 </div>
             </nav>
         </div>
